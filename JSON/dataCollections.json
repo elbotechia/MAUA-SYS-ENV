@@ -1,0 +1,38 @@
+[
+    {
+        "id":"1762be35-0a15-4dee-bd1b-ef5fea1d51d1",
+        "title": "Person",
+        "description": "Collection of user fields",
+        "fields":
+            {
+                "_id":"String of identification",
+                "personalName": "preference form to named user",
+                "username": "username inside plataform",
+                "email": "institution email with @maua.br",
+                "passwordHash": "hashed password",
+                "createdAt": "date of user creation",
+                "updatedAt": "date of last update",
+                "avatarId": "optional avatar id referenced storageId",
+                "coverId": "optional cover id referenced storageId"
+        }
+    }
+            ,
+        {
+                "_id": "c891f743-ab45-49a8-ac1b-c3a2084e6f49",
+                "title": "tasks",
+                "description": "Collection of tasks assigned to users",
+                "fields": 
+                    {
+                        "_id": "String of identification",
+                        "authorId": "reference to user _id",
+                        "taskName": "name of the task",
+                        "taskDescription": "description of the task",
+                        "dueDate": "date when the task is due",
+                        "status": "current status of the task (e.g., pending, completed)",
+                        "createdAt": "date of task creation",
+                        "updatedAt": "date of last update",
+                        "itemsId":["array of item ids related to the task"]
+                    }
+                
+        }
+    ]
